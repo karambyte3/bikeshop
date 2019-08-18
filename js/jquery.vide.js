@@ -337,7 +337,7 @@
 
       // Disable visibility, while loading
       visibility: 'hidden',
-      opacity: 0
+      opacity: 1
     })
 
     // Resize a video, when it's loaded
