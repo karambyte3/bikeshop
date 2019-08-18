@@ -1,0 +1,68 @@
+$purple: #a72cbd;
+$gray: #303030;
+$lightgray: #888888;
+$darkgray: #222222;
+
+@mixin button {
+    font-size: 16px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #ffffff;
+    border-radius: 6px;
+    padding: 16px 26px;
+    background-color: rgba(156, 40, 177, 0.774);
+    text-align: center;
+    transition: .3s;
+
+    &:hover {
+        background-color: rgb(167, 44, 189);
+
+    }
+}
+
+@mixin center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@mixin hover-purple {
+    &:hover {
+        color: #9c28b1;
+    }
+}
+
+.container-head {
+    text-align: center;
+    text-transform: uppercase;
+    padding: 30px;
+    cursor: pointer;
+
+    h1,
+    h3 {
+        margin: 15px 0;
+    }
+
+    h1 {
+        transition: all .3s;
+        font-size: 24px;
+        font-weight: 300;
+        @include hover-purple;
+    }
+
+    h3 {
+        font-size: 16px;
+        color: #000000bd;
+        font-weight: lighter;
+    }
+}
+
+.category {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 12px;
+    transition: .3s;
+
+    z-index: 200;
+    @include hover-purple;
+}
