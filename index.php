@@ -2,7 +2,7 @@
 
 function route($routeUrls, $requestLogin = false) {
     $pageFound = false;
-    $reqUrl = substr($_SERVER['REQUEST_URI'], 10);
+    $reqUrl = substr($_SERVER['REQUEST_URI'], 1);
     $reqUrl = rtrim($reqUrl, 10);
 
     if($reqUrl == '') {
